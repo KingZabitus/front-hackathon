@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="data.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>N-Report</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="dataMap.js"></script>
+</head>
+<body>
+    <div class="alinhamento-maior">
+        <div class="menu-lateral">
+            <div class="informacoes-usuario">
+                <img src="../../public/img/userProfile.png" alt="Imagem de login">
+                <h2>Nome Do Usuario</h2>
+                <p>emaildousuario@gmail.com</p>
+            </div>
+            <div class="botoes-dashbord">
+                <div class="botoes"> 
+                    <img src="../../public/img/home.png" alt="icone em formato de casa">
+                    <a href="../Cadastro/index.html"><button>INÍCIO</button></a>
+                </div>
+                <div class="botoes">
+                    <img src="../../public/img/stats.png" alt="icone em formato de grafico de barras">
+                    <a href="../Analitcs/index.html"><button>ESTATÍSTICAS</button></a>
+                </div>
+                <div class="botoes">
+                    <img src="../../public/img/edit.png" alt="icone em formato de caneta escrevendo em folha">
+                   <a href="../PagLogin/index.html"><button>SAIR</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="dashbord">
+            <div class="inter">
+                <div class="header">
+                    <h1>Solicitação</h1>
+                    <h3>Protocolo: <span>1234567891011</span></h3>
+                    <h4>Tipo: <span>Serviço de iluminação</span></h4>
+                    <p>Data: <span>27/12/2023</span></p>
+                </div>
+                <div class="map"></div>
+                <button id="btn">Atender</button>
+            </div>
+        </div>
+    </div>
+    <!-- prettier-ignore -->
+    <script>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "", v: "weekly"});
+    </script>
+</body>
+</html>

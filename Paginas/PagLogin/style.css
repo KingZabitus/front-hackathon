@@ -1,0 +1,85 @@
+body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    background-color: #292929;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-maior {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-menor-esquerdo img{
+    width: 500px;
+    height: 550px;
+}
+
+.container-menor-direito {
+    width: 500px;
+    height: 550px;
+    background: #FFF;
+    box-shadow: 1px 1px 75px 10px rgba(0, 0, 0, 0.25);  
+    font-style: normal;
+    line-height: normal;
+}
+
+.container-menor-direito-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 60px 20px 60px;
+}
+
+.container-menor-direito h2{
+    color: #AC111E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.container-menor-direito p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container-menor-direito div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 90px;
+}
+
+.container-menor-direito div input {
+    height: 45px;
+    border: 3px solid #AC111E;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: 500ms;
+    margin-top: 5px;
+}
+
+.container-menor-direito div input:focus {
+    background-color: #dd989e;
+    transition: 500ms;
+}
+
+.container-menor-direito div a button {
+    width: 100%;
+    background-color: #AC111E;
+    color: #dd989e;
+    border: none;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container-menor-direito div p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px;
+}
